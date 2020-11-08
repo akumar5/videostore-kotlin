@@ -1,7 +1,7 @@
 import java.util.*
 
-class Customer(val name: String) {
-    private val rentals = Vector<Rental>()
+class Customer(private val name: String) {
+    private val rentals =   Vector<Rental>()
 
     fun addRental(rental: Rental) {
         rentals.addElement(rental)
@@ -43,8 +43,8 @@ class Customer(val name: String) {
 
         }
 
-        result += "You owed " + totalAmount.toString() + "\n"
-        result += "You earned " + frequentRenterPoints.toString() + " frequent renter points\n"
+        result += "You owed $totalAmount\n"
+        result += "You earned $frequentRenterPoints frequent renter points\n"
 
 
         return result

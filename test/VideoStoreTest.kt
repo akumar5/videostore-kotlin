@@ -1,11 +1,12 @@
 import junit.framework.TestCase
+import Customer as Customer1
 
 class VideoStoreTest(name: String) : TestCase(name) {
 
-    private var customer: Customer? = null
+    private var customer: Customer1? = null
 
     override fun setUp() {
-        customer = Customer("Fred")
+        customer = Customer1("Fred")
     }
 
     fun testSingleNewReleaseStatement() {
